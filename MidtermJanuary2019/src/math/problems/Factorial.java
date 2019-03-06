@@ -21,7 +21,7 @@ public class Factorial {
             for(int numtemp = 1; numtemp <= num; numtemp++){
                 total = total * x;
                 x++;
-            }System.out.println(total);
+            }System.out.println("the Factorial of " + num + " is: " + total);
         }
 
         else{System.out.println("Factorials can only be done with positive numbers");}

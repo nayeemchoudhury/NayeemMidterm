@@ -40,19 +40,19 @@ public class CsvReader {
         Collections.sort(roster);
         for(Trainee student:roster) {
             if (student.getNumberOfExercisesSolved()>=600) {
-                System.out.print("You did pretty good-->                    ");
+                System.out.print("You did pretty good-->                      ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
-            } else if (student.getNumberOfExercisesSolved()>=500 && student.getNumberOfExercisesSolved()<600) {
-                System.out.print("You could do little better-->             ");
+            }else if (student.getNumberOfExercisesSolved()>=500 && student.getNumberOfExercisesSolved()<600) {
+                System.out.print("You could do little better-->               ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }else if (student.getNumberOfExercisesSolved()>=400 && student.getNumberOfExercisesSolved()<500) {
-                System.out.print("You could do better-->                    ");
+                System.out.print("You could do better-->                      ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }else if (student.getNumberOfExercisesSolved()>=300&& student.getNumberOfExercisesSolved()<400) {
-                System.out.print("You should have done more-->              ");
+                System.out.print("You should have done more-->                ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }else if (student.getNumberOfExercisesSolved()>=200&&student.getNumberOfExercisesSolved()<300) {
-                System.out.print("You haven't done enough-->                 ");
+                System.out.print("You haven't done enough-->                  ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }else if (student.getNumberOfExercisesSolved()>=100&&student.getNumberOfExercisesSolved()<200) {
                 System.out.print("You did not take this course seriously-->   ");
@@ -62,6 +62,12 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+
+        //AVERAGE SCORES OF ALL STUDENT'S CODE-LAB:
+        int totalScore = 0;//total of everyone's scores. for loop created to get sum.
+        int numStudents = roster.size(); //total number of students (should be same as array length)
+        for(Trainee student:roster){totalScore += student.getNumberOfExercisesSolved();}
+        System.out.println("Average of all scores is: " + (totalScore/numStudents));
 
     }
 

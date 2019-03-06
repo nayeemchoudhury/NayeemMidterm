@@ -8,17 +8,20 @@ public class Pattern {
 		 *
 		 *
 		 */
-		int start = 100;
-		for (int x=0; x<=100; x++){
-			if (start<=100&&start>90){System.out.print(start+",");
-			start--;}
-			else if (start<=90&&start>=80){System.out.print(start+",");
-				start = (start -2);}
-			else{
-				System.out.println("blahh");
+//int sub; //this variable is the one that will count the amount being subtracted. (must increase 1 after each 10 iterations)
+//int count; //this variable counts up to 10 and on the eleventh resets back to 1
+		int displayNum=100;/*<----- change value of a to set start point*/
+		int amtSub=1;
+		System.out.print(displayNum+",");
+			for (int count = 1; count <= 10;count++){
+				if(displayNum>=0)/*<---- change the conditional of a to set end point*/{System.out.print((displayNum=displayNum-amtSub)+",");}
+				if (count == 10){
+					count = 1;
+					amtSub++;
+				}
+
 			}
 
-		}
 
 
 	}
