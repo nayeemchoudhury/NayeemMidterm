@@ -13,7 +13,7 @@ public class UseMap {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
 
-
+		// Array List to store data-----------------------------------
 		List<String> headParts = new ArrayList<String>();
 		headParts.add("eyes");
 		headParts.add("nose");
@@ -38,13 +38,14 @@ public class UseMap {
 		legParts.add("foot");
 		legParts.add("toes");
 
-
+		// HashMap to store strings and array lists from above----------------------
 		Map<String, List<String>> bodyParts = new HashMap<String, List<String>>();
 		bodyParts.put("head", headParts);
-		bodyParts.put("arms", armParts);
+		bodyParts.put("arm", armParts);
 		bodyParts.put("torso", torsoParts);
-		bodyParts.put("legs", legParts);
+		bodyParts.put("leg", legParts);
 
+		// for loop to retrieve data from above-----------------------------------
 		for(Map.Entry<String, List<String>> Body :  bodyParts.entrySet()){
 			System.out.println("My " + Body.getKey() + " is made up of " + Body.getValue());
 		}

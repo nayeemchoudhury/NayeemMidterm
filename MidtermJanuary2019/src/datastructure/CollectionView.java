@@ -17,9 +17,9 @@ public class CollectionView {
                 map.put(5, "San Jose");
                 map.put(6, "Seattle");
 
-                //Collection view of data with keys
+                //values with keys
                 System.out.println(map);
-                //Collection view of only data
+                //only values
                 System.out.println(map.values());
         }
 }
