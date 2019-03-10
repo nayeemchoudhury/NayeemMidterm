@@ -19,16 +19,6 @@ public class DuplicateWord {
         String st2 = st.toLowerCase();
         String st3 = st2.replace(".", "");
         String[] stringArray = st3.split(" ");
-        //AVERAGE------------------------------------
-        int x = 0;
-        int sum = 0;
-
-        for (int i = 1; i <= stringArray.length; i++) {
-            sum += stringArray[x].length();
-            x++;
-        }
-        double avLength = sum / stringArray.length;
-        System.out.println("The average length of the words is: " + avLength);
 
         //NUMBER OF OCCURRENCES-----------------------
         Map<String, Integer> wordMap = new HashMap<>();
@@ -39,7 +29,18 @@ public class DuplicateWord {
             }
             wordMap.put(word, occur + 1);
         }
-        wordMap.forEach((String, Integer)-> System.out.println("(" + Integer + ") " + String));
+        wordMap.forEach((String, Integer)-> System.out.println("(" + Integer + ")-->" + String));
+
+        //AVERAGE------------------------------------
+        int x = 0;
+        int sum = 0;
+
+        for (int i = 1; i <= stringArray.length; i++) {
+            sum += stringArray[x].length();
+            x++;
+        }
+        double avLength = sum / stringArray.length;
+        System.out.println("The average length of the words is: " + avLength);
     }
 }
 
