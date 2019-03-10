@@ -11,8 +11,11 @@ public class DetermineLargestWord {
          Should return "10 biological".
          */
         String s="Human brain is a biological learning machine";
-        Map<Integer, String> wordNLength = findTheLargestWord(s);
+        //Map<Integer, String> wordNLength = findTheLargestWord(s);
         //implement
+        String s2 = s.replace(".", "");// just in case sentence has "." it will not count in word length
+        String wordNLength [] = s2.split(" ");
+        System.out.println(wordNLength.length);
 
     }
 
