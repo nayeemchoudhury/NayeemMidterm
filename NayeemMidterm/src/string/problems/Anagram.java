@@ -12,11 +12,9 @@ public class Anagram {
         //Write a Java Program to check if the two String are Anagram. Two String are called Anagram when there is
         //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter first word")
-        ;
+        System.out.println("Please enter first word");
         String wordA = input.nextLine();
-        System.out.println("Please enter second word:")
-        ;
+        System.out.println("Please enter second word:");
         String wordB = input.nextLine();
 
         if (wordA.length() != wordB.length()) {
