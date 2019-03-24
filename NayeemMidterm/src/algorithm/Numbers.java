@@ -24,9 +24,8 @@ public class Numbers {
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 
-
-		//Selection Sort----------------------------------------------------
 		Sort algo = new Sort();
+		//Selection Sort----------------------------------------------------
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
@@ -35,6 +34,7 @@ public class Numbers {
         //printValue(numbers);
 		int n = num.length;
 		randomize (num, n);
+
 
 
 		//Insertion Sort:---------------------------------------------------
@@ -68,17 +68,19 @@ public class Numbers {
 		System.out.println("Total Execution Time of " + num.length + " numbers in Merge Sort take: " + mergeSortExecutionTime + " milli sec");
 		randomize (num, n);
 
-		//Quick Sort:-------------------------------------------------------
-		algo.quickSort(num);
-		long quickSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of " + num.length + " numbers in Quick Sort take: " + quickSortExecutionTime + " milli sec");
-		randomize (num, n);
-
 		//Shell Sort:-------------------------------------------------------
 		algo.shellSort(num);
 		long shellSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Shell Sort take: " + shellSortExecutionTime + " milli sec");
+		randomize (num, n);
 
+		//Quick Sort:-------------------------------------------------------
+		int first = 0;
+		int last = num.length-1;
+		algo.quickSort(num, first, last);
+		long quickSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Quick Sort take: " + quickSortExecutionTime + " milli sec");
+		randomize (num, n);
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
 

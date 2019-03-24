@@ -23,9 +23,9 @@ public class Palindrome {
         int beginning = 0;
         int ending = length - 1;
         while (ending > beginning) {
-            char forwardChar = testWord.charAt(beginning++);
-            char backwardChar = testWord.charAt(ending--);
-            if (forwardChar == backwardChar) {
+            char firstChars = testWord.charAt(beginning++);
+            char endChars = testWord.charAt(ending--);
+            if (firstChars == endChars) {
                 return true;
             }
         }

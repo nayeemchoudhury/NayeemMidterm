@@ -25,7 +25,7 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String myFile = System.getProperty("/Users/nayeem/IdeaProjects/MidtermJanuary2019/src/data/self-driving-car");
+		String myFile = System.getProperty("C:\\Users\\nayee\\IdeaProjects\\NayeemMidterm\\src\\data\\self-driving-car");
 		BufferedReader reader = null;
 
 		try {
