@@ -1,39 +1,109 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-
+A. To locate and retrieve data.
 
 What are the various operations that can be performed on different Data Structures?
+A. You can search: sort, delete, insert, merge,traverse
+
 List out the areas in which data structures are applied extensively?
-what is an Array?
-what is the difference between the Array and ArrayList?
-what is LinkedList?
+A. In the operating system, database management system, statistical analysis package, numerical analysis, graphics,
+   artificial intelligence, simulation
+What is an Array?
+A. A collection of data with an index.
+
+What is the difference between the Array and ArrayList?
+A. Array can store primitive variables and objects but Arraylist can store only objects.
+
+What is LinkedList?
+A. It is basically a linear data structure where each element is a separate object which is called a node.
+
 How is an Array different from Linked List?
-what is queue?
-what is stack?
-what is FIFO and LIFO?
-what is the order of complexity?
-what is the best case to search an element from an array?
-what is the worst case to search an element from an array?
-what is tree in data structure?
-what is graph in data structure?
-what is the difference between the HashTable and HashMap?
+A. Array each element is independent whereas in linked list each node points to the next or previous one.
+
+What is queue?
+A. It is a linear data structure where elements can be accessed  ob the basis of FIFO.
+
+What is stack?
+A.Stack is linear data structure where elements can be accessed on the basis of LIFO.
+
+What is FIFO and LIFO?
+A. FIFO: First in first out. Example: In Queue data can be accessed by FIFO method.
+   LIFO: Last in first out. Example:In Stack data can be accessed by LIFO method
+
+What is the order of complexity?
+A. This means that it is a certain mathematical expression of the size of the input, and the algorithm finishes between
+two factors of it.
+
+
+What is the best case to search an element from an array?
+A. When you find it on the first comparison.
+
+What is the worst case to search an element from an array?
+A. When the expected value is the last.
+
+What is tree in data structure?
+A. tree unlike arrays is a nonlinear data structure.
+
+What is graph in data structure?
+A. A graph is picture representation of a set of objects where some pairs of objects are connected by edges.
+
+What is the difference between the HashTable and HashMap?
+A. Hashtable is synchronized and hashmap is not.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. RDBMS=Array, Network data model=Graph, Hierarchical data model=Trees
+
 How HashMap works in java?
+A. It works based on the hashing principle.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. Is an error you get trying to accesss a array index that doesn't exist.
+
+
 What are the different ways of copying an array into another array?
+A.  The multiple ways to copying elements of an array into another array are: to copy Manually,Arrays.copyOf(),
+    System.arraycopy(), Object.clone(), and Arrays.copyOfRange().
+
 What is difference between an array and a linked list?
+A. Array can store primitive variables and objects but arraylist can store only objects.
+
 What is DFS and BFS?
+A. Depth first search(DFS) and breath first search (BFS)
+
 What is Recursion?
+A. When a method calls itself inside the method, this is called recursion.
+
 What are linear and non linear data Structures?
+A. Linear data structure: Array, Stack, Queue, LinkedList
+   Non-Linear data structure: Trees, Graphs
+
 What is Big-(O)-notation?
+A. Big O notations are used to describe the performance or complexity of an algorithm.
+
 Outlined different kind of sorting algorithm with time complexity?
+A.  There are eight kinds of sorting algorithm associated with time complexity.
+  - Insertion sort
+  - Merge sort
+  - Selection sort
+  - Bubble sort
+  - Heap sort
+  - Quick sort
+  - Bucket sort
+  - Radix sort.
+
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
 
-
+A.
+    array: search o(n), access o(1), insert o(n), deletion o(n)
+    arraylist: search o(n), access o(1), insert o(n), deletion o(n)
+    linkedlist: search o(n), access o(1), insert o(1), deletion o(1)
+    stack: search o(n), access o(n), insert o(1), deletion o(1)
+    queue: search o(n), access o(n), insert o(1), deletion o(1)
+    B-Tree: search o(log n), access o(log n), insert o(log n), deletion o(log n)
